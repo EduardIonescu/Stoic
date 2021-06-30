@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root {
+    --title-color: rgb(71, 71, 71);
+    --header-background-color: rgb(254, 209, 191);
+    --hover-color : hsl(336, 100%, 50%);
+    --second-background-color: rgb(237, 24, 70);
+    --third-background-color: rgb(61, 145, 219);
+    --forth-background-color: hsl(160, 100%, 38%);
+    --fifth-left-color: rgb(255, 224, 227);
+    --fifth-right-color: rgb(254, 139, 128);
+}
+
+html{
+    font-size:2.5vh;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav{
+    height: 30vh;
+    padding: 3vh 0;
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    transition-duration: 0.7s;
+    color: black;
+}
+
+
+nav button{
+    border:none;
+    background-color: transparent;
+    transition-duration: 0.7s;
+}
+
+#dropdown-stuff {
+    background-color: transparent;
+}
+
+
+
+#title {
+    font-family: Lobster, cursive;
+    font-size: 3vh;
+    font-weight: 600;
+    text-decoration: none;
+    position: fixed;
+    transition-duration: 0.7s;
+    z-index: 999;
+}
+
+#title:hover, nav a:hover, nav button:hover{
+    color: var(--hover-color);
+}
+
+header {
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--title-color);
+    background-color: var(--header-background-color);
+}
+
+header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header p{
+    margin-top: 2vh;
+}
+
+.quote-container {
+    padding-top:45vh;
+    width: 100%;
+    height: 15vh;
+}
+
+section, header {
+    height: 100vh;
+}
+section div{
+    height:100%;
+}
+
+.secondPageImg{
+    width: 75%;
+    max-width: 400px;
+    height:auto;
+    margin:auto;
+    display: block;
+    position: relative;
+    z-index: -1;
+}
+
+.left-content {
+    background-color: var(--second-background-color);
+    z-index: -2;
+}
+
+.image-text {
+    color: rgb(248, 248, 248);
+    padding:0;
+    margin:0;
+    margin-left: 3vw;
+    font-size:10vh;
+    transform: translateY(120%);
+}
+
+.right-content {
+    height: 100%;
+    background-color: white;
+    z-index: -2;
+}
+
+.right-content img{
+    top: 20vh;
+    width: 88%;
+    max-width: 520px;
+}
+
+.secondPageDescription {
+    padding-top: 11vh;
+    color: white;
+    font-size: 7vh;
+}
+
+section{
+    width:100%;
+}
+
+.thirdPage {
+    background-color: var(--third-background-color);
+}
+
+.headerThirdPage {
+    color:lightgray;
+    padding: 10vh 0;
+    display:block;
+}
+
+.headerThirdPage a{
+    text-decoration: none;
+}
+
+.carousel-inner img {
+    width: auto;
+    height: auto;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: gray;
+}
+
+.carousel-caption h3 {
+    margin-top: 34vh;
+}
+
+.carousel-caption h3, .carousel-caption p{
+    color: var(--header-background-color);
+
+}
+
+.forthPage {
+    background-color: var(--forth-background-color);
+}
+
+.headerForthPage {
+    color: white;
+    padding: 10vh 0;
+    display:block;
+}
+
+.list-group *{
+    opacity:0.9;
+}
+
+.fifth-content h1 {
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+}
+
+.fifth-content img{
+    height: 24vh;
+    margin-bottom: 3vh;
+}
+
+.fifthPage {
+    background-image: linear-gradient(to right,
+    var(--fifth-left-color), var(--fifth-right-color));
+    z-index: -1;
+    height: 120vh;
+    color: var(--title-color)
+}
+
+.planet{
+    width:103%;
+    min-height: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.footer {
+    height:40vh;
+    width: 100%;
+    padding-top: 2rem;
+    background-image:linear-gradient(to right, rgb(97, 97, 97), #292c2f);
+    color: #bbb;
+}
+
+.footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+.footer a:hover, footer a:focus {
+    color: #aaa;
+    text-decoration: none;
+    border-bottom: 1px dotted red;
+}
+
+.footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
